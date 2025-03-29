@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna | Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background-color: var(--color-dark-mode); /* Uses your existing dark background */
+      color: var(--color-white);
+    }
+
+    header {
+      background-image: linear-gradient(to right, #1a1a29, rgba(27, 27, 40, 0)); /* matches your navbar */
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--color-navbarBorder-dark);
+    }
+
+    nav a {
+      color: var(--color-light-blue);
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    nav a:hover {
+      color: var(--color-light-purple);
+    }
+
+    .page-heading {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 3rem;
+      color: var(--color-light-purple);
+    }
+
+    .content-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: var(--tech-stack-box-first-color); /* matches your section box */
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .content-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--color-light-blue);
+    }
+
+    .content-section p {
+      font-size: 1.8rem;
+      color: var(--color-ddd-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.3rem;
+      color: var(--color-gray);
+      border-top: 1px solid var(--color-navbarBorder-dark);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="vinod jangid logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="work-experience.html">Work Experience</a>
+    </nav>
+  </header>
+
+  <section class="work-experience-section-container" id="work-experience" data-aos="fade-up">
+    <div class="work-experience-section">
+      <div class="section-heading">
+        <h2 class="section-heading-article" tabindex="0" aria-label="Work Experience heading">
+          &#60;/Work Experience&#62;
+        </h2>
+        <p class="sectionHeadingP"></p>
+      </div>
+  
+      <div class="work-experience-details">
+        <p tabindex="0"></p>
+  
+        <!-- Job 1 -->
+        <div class="work-experience-card" data-aos="fade-right">
+          <h3 class="job-title">Graduate Assistant</h3>
+          <p class="company">Monmouth University, NJ, USA</p>
+          <p class="work-duration">10/2024 – Present</p>
+          <p class="job-description">
+            Analyzing 1,000+ climate change images to track wildlife trends. 
+            Implementing YOLO-based object detection for species monitoring and LLMs for automated identification. 
+            Managing large-scale datasets and building interactive dashboards for conservation insights.
+          </p>
+        </div>
+  
+        <!-- Job 2 -->
+        <div class="work-experience-card" data-aos="fade-left">
+          <h3 class="job-title">Technology Developer Intern</h3>
+          <p class="company">Real AI Dynamics, Las Vegas, USA</p>
+          <p class="work-duration">06/2024 – 08/2024</p>
+          <p class="job-description">
+            Integrated CoinMarketCap API for real-time crypto analysis. 
+            Used ChatGPT for AI-driven resume screening and candidate ranking. 
+            Leveraged Power BI for data visualization and fine-tuned GPT-4 to improve resume evaluations via a CLI chatbot.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Krishna. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
