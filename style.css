@@ -1147,7 +1147,7 @@ noscript {
 /* Work Experience Details Container */
 .work-experience-details {
     width: 100%; /* Prevents right stretching */
-    max-width: 850px; /* Matches Education section */
+    max-width: 950px; /* Matches Education section */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1157,13 +1157,14 @@ noscript {
 /* Work Experience Card */
 .work-experience-card {
     background: var(--tech-stack-box-first-color);
-    padding: 40px;
+    padding: 50px;
     border-radius: 12px;
     transition: 0.3s ease-in-out;
     text-align: left;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 850px; /* Matches Education card width */
+    
 }
 
 .work-experience-card:hover {
@@ -1196,6 +1197,41 @@ noscript {
 /* Highlight */
 .highlight {
     color: var(--color-white);
+}
+
+/* This is the main container for your work experience content.
+  Apply your section's padding here.
+*/
+.work-experience-section {
+  padding: 2rem; /* Adjust this value to match your other sections */
+  /* Add your background-color, border-radius, etc., here as well */
+}
+
+/* This container for the button now lives inside the padded area.
+  The flex rule will push it to the right edge of that padded area.
+*/
+.section-footer {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 20px; 
+}
+
+/* The button styling remains the same */
+.view-more-btn {
+  padding: 8px 18px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
 }
 
  /*end of work exp*/
@@ -1397,6 +1433,7 @@ footer {
     gap: 20px
 }
 
+
 .github-redirect {
     width: 50px
 }
@@ -1461,6 +1498,43 @@ footer {
 
 .cta:active {
     transform: scale(.95)
+}
+/* Container to position the button */
+.section-footer {
+  display: flex;
+  justify-content: flex-end; /* Pushes the button to the right */
+  width: 100%;
+  
+  /* --- 👇 UPDATE THE VALUES BELOW 👇 --- */
+
+  /* 1. Find the max-width of your .project-box-wrapper and use it here */
+  max-width: 1140px; /* EXAMPLE VALUE - CHANGE THIS */
+
+  /* 2. Match the horizontal padding of your .project-box */
+  padding: 0 2rem; /* EXAMPLE VALUE - CHANGE THIS */
+  
+  /* This centers the container and adds space on top */
+  margin: 25px auto 0;
+  
+  /* This prevents padding from breaking the alignment */
+  box-sizing: border-box; 
+}
+
+/* Styling for the button (no changes needed here) */
+.view-more-btn {
+  padding: 8px 18px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /* Center the Certificates Section */
